@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class inventory
-
+    
     '''<summary>
     '''SqlDataSource1 control.
     '''</summary>
@@ -21,16 +21,16 @@ Partial Public Class inventory
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
-
+    
     '''<summary>
-    '''kioskDD control.
+    '''printView control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents kioskDD As Global.System.Web.UI.WebControls.DropDownList
-
+    Protected WithEvents printView As Global.System.Web.UI.WebControls.Panel
+    
     '''<summary>
     '''GridView1 control.
     '''</summary>
@@ -39,16 +39,7 @@ Partial Public Class inventory
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
-
-    '''<summary>
-    '''qtyAdjustView control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents qtyAdjustView As Global.System.Web.UI.WebControls.DetailsView
-
+    
     '''<summary>
     '''SqlDataSource2 control.
     '''</summary>
@@ -57,5 +48,34 @@ Partial Public Class inventory
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SqlDataSource2 As Global.System.Web.UI.WebControls.SqlDataSource
-
+    
+    '''<summary>
+    '''qtyAdjustView control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents qtyAdjustView As Global.System.Web.UI.WebControls.DetailsView
+    
+    '''<summary>
+    '''lblout control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblout As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Master property.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated property.
+    '''</remarks>
+    Public Shadows ReadOnly Property Master() As NGM.backoffice
+        Get
+            Return CType(MyBase.Master,NGM.backoffice)
+        End Get
+    End Property
 End Class

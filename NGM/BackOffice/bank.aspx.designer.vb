@@ -12,34 +12,34 @@ Option Explicit On
 
 
 Partial Public Class bank
-    
+
     '''<summary>
-    '''SqlDataSource1 control.
+    '''DD_Datasource control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
-    
+    Protected WithEvents DD_Datasource As Global.System.Web.UI.WebControls.SqlDataSource
+
     '''<summary>
-    '''SqlDataSource2 control.
+    '''Deposit_Datasource control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SqlDataSource2 As Global.System.Web.UI.WebControls.SqlDataSource
-    
+    Protected WithEvents Deposit_Datasource As Global.System.Web.UI.WebControls.SqlDataSource
+
     '''<summary>
-    '''SqlDataSource3 control.
+    '''Bank_Datasource control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SqlDataSource3 As Global.System.Web.UI.WebControls.SqlDataSource
-    
+    Protected WithEvents Bank_Datasource As Global.System.Web.UI.WebControls.SqlDataSource
+
     '''<summary>
     '''calendarDD control.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class bank
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents calendarDD As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''DetailsView1 control.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class bank
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents DetailsView1 As Global.System.Web.UI.WebControls.DetailsView
-    
+
     '''<summary>
     '''DetailsView2 control.
     '''</summary>
@@ -66,4 +66,16 @@ Partial Public Class bank
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents DetailsView2 As Global.System.Web.UI.WebControls.DetailsView
+
+    '''<summary>
+    '''Master property.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated property.
+    '''</remarks>
+    Public Shadows ReadOnly Property Master() As NGM.backoffice
+        Get
+            Return CType(MyBase.Master, NGM.backoffice)
+        End Get
+    End Property
 End Class
