@@ -14,6 +14,60 @@ Option Explicit On
 Partial Public Class pos
     
     '''<summary>
+    '''SqlDataSource1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
+    
+    '''<summary>
+    '''addBar control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents addBar As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''addIcon control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents addIcon As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''searchBar control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents searchBar As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''searchIcon control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents searchIcon As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''searchResults control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents searchResults As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
     '''pos_editIcon control.
     '''</summary>
     '''<remarks>
@@ -68,40 +122,31 @@ Partial Public Class pos
     Protected WithEvents purchaseBannerPurchase As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
-    '''CategoriesDD control.
+    '''purchaseList control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CategoriesDD As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents purchaseList As Global.System.Web.UI.WebControls.ListBox
     
     '''<summary>
-    '''ProductsDD control.
+    '''purchasePriceLB control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ProductsDD As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents purchasePriceLB As Global.System.Web.UI.WebControls.ListBox
     
     '''<summary>
-    '''SqlDataSource1 control.
+    '''DeleteButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
-    
-    '''<summary>
-    '''ProductDetails control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ProductDetails As Global.System.Web.UI.WebControls.DetailsView
+    Protected WithEvents DeleteButton As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
     '''returnBannerPurchase control.
@@ -149,6 +194,33 @@ Partial Public Class pos
     Protected WithEvents returnBannerReturn As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
+    '''returnList control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents returnList As Global.System.Web.UI.WebControls.ListBox
+    
+    '''<summary>
+    '''returnPriceLB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents returnPriceLB As Global.System.Web.UI.WebControls.ListBox
+    
+    '''<summary>
+    '''DeleteRButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DeleteRButton As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
     '''paymentBannerReturn control.
     '''</summary>
     '''<remarks>
@@ -192,6 +264,159 @@ Partial Public Class pos
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents paymentBannerPayment As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''cashButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cashButton As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''cardButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cardButton As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''paymentInputContainer control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents paymentInputContainer As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''paymentTB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents paymentTB As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''submit control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents submit As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''employeeDisplay control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents employeeDisplay As Global.System.Web.UI.WebControls.Literal
+    
+    '''<summary>
+    '''dateDisplay control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents dateDisplay As Global.System.Web.UI.WebControls.Literal
+    
+    '''<summary>
+    '''timeDisplay control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents timeDisplay As Global.System.Web.UI.WebControls.Literal
+    
+    '''<summary>
+    '''purchaseTotal control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents purchaseTotal As Global.System.Web.UI.WebControls.Literal
+    
+    '''<summary>
+    '''returnTB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents returnTB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''returnTotal control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents returnTotal As Global.System.Web.UI.WebControls.Literal
+    
+    '''<summary>
+    '''subTotalTB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents subTotalTB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''subTotal control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents subTotal As Global.System.Web.UI.WebControls.Literal
+    
+    '''<summary>
+    '''taxTB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents taxTB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''tax control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents tax As Global.System.Web.UI.WebControls.Literal
+    
+    '''<summary>
+    '''totalTB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents totalTB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''total control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents total As Global.System.Web.UI.WebControls.Literal
     
     '''<summary>
     '''checkoutButton control.
