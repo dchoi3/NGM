@@ -385,4 +385,6 @@ Public Class pos
     Protected Sub submit_Click(sender As Object, e As ImageClickEventArgs) Handles submit.Click
 
     End Sub
+
 End Class
+
